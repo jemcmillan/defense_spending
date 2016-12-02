@@ -30,19 +30,18 @@
 
 <script>
 
-// Adapted from source  https://datamaps.github.io/
+// Adapted from https://datamaps.github.io/
 // GitHub code source at  https://github.com/markmarkoh/datamaps
-// Defense spending values source:
-//   https://www.oea.gov/resource/defense-spending-state-fiscal-year-2015
-//
-//
+// Defense spending values source: https://www.oea.gov/resource/defense-spending-state-fiscal-year-2015
+
 
 var spending = new Datamap({
   scope: 'usa',
   element: document.getElementById('map'),
   geographyConfig: {
     highlightBorderColor: '#eae9e9',
-   popupTemplate: function(geography, data) {
+   
+    popupTemplate: function(geography, data) {
       return '<div class="hoverinfo">'  +
 ' Defense spending in ' + geography.properties.name  +
 ' = $' + data.defenseSpending +
