@@ -1,0 +1,12 @@
+h1 {
+    color: green;
+    font-family: sans-serif;
+    text-align: center;
+}
+p {
+    margin-top: -15;
+    color: black;
+    font-family: serif;
+    font-size: 14px;
+    text-align: center;
+}
