@@ -6,7 +6,6 @@
 <script src="d3.v3.min.js" type="text/JavaScript"></script>
 <script src="topojson.min.js" type="text/JavaScript"></script>
 <script src="datamaps.usa.min.js" type="text/JavaScript"></script>
-
 </head>
 <body>
   <h1>Fiscal Year 2015 Defense Spending</h1>
@@ -15,8 +14,8 @@
 
 <style>
   svg {
-    height: 450px;
-    width: 950;
+    height: 500px;
+    width: 950px;
     border: none;
   }
 
@@ -40,7 +39,7 @@ var spending = new Datamap({
   element: document.getElementById('map'),
   geographyConfig: {
     highlightBorderColor: '#eae9e9',
-   
+  
     popupTemplate: function(geography, data) {
       return '<div class="hoverinfo">'  +
 ' Defense spending in ' + geography.properties.name  +
